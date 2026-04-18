@@ -102,7 +102,7 @@ python main.py chat --load-model models/trained_model_step2000
 ```
 
 **Note:** Checkpoint files are saved as `models/<name>_step<step>_embedding.npy` and `models/<name>_step<step>_linear.npy`. The system automatically detects and loads them.
-```
+
 
 ---
 
