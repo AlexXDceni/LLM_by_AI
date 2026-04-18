@@ -6,17 +6,60 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat" alt="License">
 </p>
 
-A transformer-based Large Language Model built from scratch in pure Python/NumPy. No PyTorch, no TensorFlow - just NumPy and mathematical foundations.
+An educational transformer-based Large Language Model built from scratch in pure Python/NumPy. **Built by AI** as a learning resource to understand, study, and rebuild in C++. No frameworks, no black boxes - just mathematical foundations.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Quick Start](#quick-start)
+- [About This Project](#about-this-project)
+- [Why This Project?](#why-this-project)
+- [How to Learn From This Code](#how-to-learn-from-this-code)
 - [Commands](#commands)
 - [Training Examples](#training-examples)
 - [Architecture](#architecture)
 - [Files](#files)
 - [Known Issues](#known-issues)
+
+---
+
+## About This Project
+
+This repository was **built by AI** as a learning tool to understand how Large Language Models work under the hood.
+
+**Purpose:**
+- Understand every component of an LLM (embeddings, attention, RoPE, optimizers, etc.)
+- Serve as a reference for porting to C++ or other languages
+- Help anyone learn about transformer architecture
+
+**This is not a production model** - it's an educational resource designed for study and understanding.
+
+---
+
+## Why This Project?
+
+**Built by AI to learn, understand, and rebuild.**
+
+This repository serves as a learning resource to understand how LLMs work:
+- **Understand every component**: Each part of the transformer is its own file with documentation
+- **Port to C++**: The clean code is designed to be translated to C++ or other languages
+- **No black boxes**: Pure implementation - see the actual math
+- **For anyone**: Anyone wanting to learn how LLMs work can study this code
+
+---
+
+## How to Learn From This Code
+
+Recommended reading order to understand transformers:
+
+1. **llm/tokenization.py** - How text becomes numbers (tokenizer)
+2. **llm/embeddings.py** - Token representations
+3. **llm/positional_encoding.py** / **llm/rope.py** - Position awareness
+4. **llm/attention.py** - Multi-head self-attention
+5. **llm/transformer_block.py** - Transformer layer
+6. **llm/llm_model.py** - Full model integration
+7. **llm/optimizer.py** - Model learning (AdamW)
+8. **llm/simple_training.py** - Training loop
 
 ---
 
@@ -241,4 +284,6 @@ MIT License - Educational project to understand how LLMs work under the hood.
 
 ## Credits
 
-Built by AI - Educational project to understand transformer architecture and language modeling fundamentals.
+**Built by AI** as a learning resource to understand, study, and rebuild in C++.
+
+For anyone who wants to learn how LLMs work - this code is for you.
